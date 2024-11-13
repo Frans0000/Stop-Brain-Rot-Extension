@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Brainrot</title>
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        width: 180px;
+        padding: 10px;
+        background-color: #e0eefa;
+      }
+
+      h1 {
+        font-size: 14px;
+        text-align: center;
+        color: #333;
+        margin-bottom: 12px;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 12px;
+        margin: 5px 0;
+        color: #555;
+      }
+
+      span {
+        font-weight: bold;
+        color: #2c27a8;
+      }
+
+      #reset-button {
+        width: 100%;
+        padding: 8px;
+        margin-top: 12px;
+        font-size: 14px;
+        background-color: #0f17ab;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      #reset-button:hover {
+        background-color: #2c6fba;
+      }
+
+      #reset-button:active {
+        background-color: #153c80;
+      }
+
+      .counter {
+        background-color: #ffffff;
+        padding: 4px 8px;
+        border-radius: 4px;
+        display: inline-block;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        font-size: 14px;
+        color: #333;
+      }
+
+      .counter span {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Stop Brainrot</h1>
+    <p>Blocked Shorts: <span id="shorts-count" class="counter">0</span></p>
+    <p>Blocked TikToks: <span id="tiktok-count" class="counter">0</span></p>
+    <p>Blocked Facebook Reels: <span id="facebook-reels-count" class="counter">0</span></p>
+    <p>Blocked Instagram Reels: <span id="instagram-reels-count" class="counter">0</span></p>
+    
+    <button id="reset-button">Reset</button>
+    
+    <script src="popup.js"></script>
+  </body>
+</html>
